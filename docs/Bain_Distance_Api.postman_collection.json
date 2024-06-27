@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "69bed178-7e9e-402a-a5c7-7bc3726265a1",
+		"name": "Bain Distance Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "632870"
+	},
+	"item": [
+		{
+			"name": "Get Distance",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"source_address\": \"1600 Amphitheatre Parkway, Mountain View, CA\",\n    \"destination_address\": \"Rua da Consolação, 930, São Paulo, SP\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/distance",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"distance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Historical Distances",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{host}}/distance/historical",
+					"protocol": "http",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"distance",
+						"historical"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

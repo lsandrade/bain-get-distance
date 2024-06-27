@@ -1,0 +1,13 @@
+services:
+  distance-api:
+    build:
+      context: ./services/distance-api
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./services/distance-api:/app
+    environment:
+      - FLASK_ENV=development
+      - MONGO_URI=mongodb://mongo:27017/distance
+      - DB_NAME=distance
