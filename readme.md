@@ -16,6 +16,12 @@ It was developed an api with two endpoints. One to calculate and get the distanc
 
 Since the amount of time provided for developing the whole challenge was 5h, the only interface to interact with the application now is a Rest Api. But future implementations can be done, like developing a mobile or web interface.
 
+### 2.1. External services used:
+- MongoDB on Atlas(https://www.mongodb.com/products/platform/atlas-database): To store the historical data of the queries.
+- Nominatim API (https://nominatim.org/release-docs/develop/api/Overview/): To get the coordinates of the given addresses.
+- Harversine Lib (https://pypi.org/project/haversine/): To calculate the distance between the coordinates.
+- Heroku (https://www.heroku.com/): To deploy the app.
+
 ## 3. API
 The documentation of the API can be found in [docs/api.md](docs/api.md)
 
