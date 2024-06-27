@@ -1,0 +1,6 @@
+Flask==2.3.2
+Flask-PyMongo==2.3.0
+gunicorn==22.0.0
+haversine==2.8.1
+pymongo==4.6.1
+requests==2.32.3
